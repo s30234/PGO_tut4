@@ -9,19 +9,19 @@ public class Customer {
     private ArrayList<Event>reservationList;
 
 
-    private Customer(String firstName, String lastName, String email, ArrayList<Event>reservationList) {
+    public  Customer(String firstName, String lastName, String email, ArrayList<Event>reservationList) {
         setFirstName(firstName);
         setLastName(lastName);
         setEmail(email);
         setReservationList(reservationList);
     }
 
-    Customer(String firstName, String lastName) {
-        this(firstName, lastName,"",null);
+   public  Customer(String firstName, String lastName,String email) {
+        this(firstName, lastName,email,null);
     }
 
 
-    void addReservation(Event event){
+   public void addReservation(Event event){
         reservationList.add(event);
     }
 
