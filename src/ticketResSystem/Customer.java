@@ -16,12 +16,12 @@ public class Customer {
         setReservationList(reservationList);
     }
 
-    private Customer(String firstName, String lastName) {
+    Customer(String firstName, String lastName) {
         this(firstName, lastName,"",null);
     }
 
 
-    private void addReservation(Event event){
+    void addReservation(Event event){
         reservationList.add(event);
     }
 
